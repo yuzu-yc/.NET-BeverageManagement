@@ -1,0 +1,4 @@
+﻿--TRUNCATE TABLE OrderItems;
+DELETE FROM Orders;
+DBCC CHECKIDENT ('Orders', RESEED, 0);
+--DBCC CHECKIDENT ('OrderItems', RESEED, 0);
